@@ -1,0 +1,47 @@
+2025-09-19 11:03:45,632 [INFO] Ouverture page de connexion
+2025-09-19 11:04:00,871 [INFO] Essai #1 avec le sélecteur : ('css', "input[formcontrolname='login']")
+2025-09-19 11:04:00,888 [ERROR] Erreur avec le sélecteur #1 (('css', "input[formcontrolname='login']")) : 'tuple' object has no attribute 'strip'
+2025-09-19 11:04:00,888 [INFO] Essai #2 avec le sélecteur : ('css', "input[placeholder='Email']")
+2025-09-19 11:04:00,888 [ERROR] Erreur avec le sélecteur #2 (('css', "input[placeholder='Email']")) : 'tuple' object has no attribute 'strip'
+2025-09-19 11:04:00,888 [INFO] Essai #3 avec le sélecteur : ('xpath', "//input[@type='text' or @type='email']")
+2025-09-19 11:04:00,888 [ERROR] Erreur avec le sélecteur #3 (('xpath', "//input[@type='text' or @type='email']")) : 'tuple' object has no attribute 'strip'
+2025-09-19 11:04:00,890 [ERROR] \u274c Aucun des sélecteurs n'a fonctionné : [('css', "input[formcontrolname='login']"), ('css', "input[placeholder='Email']"), ('xpath', "//input[@type='text' or @type='email']")]
+2025-09-19 11:04:00,890 [ERROR] Erreur dans le script : Message: Aucun élément cliquable trouvé avec les sélecteurs : [('css', "input[formcontrolname='login']"), ('css', "input[placeholder='Email']"), ('xpath', "//input[@type='text' or @type='email']")]
+
+2025-09-19 11:04:04,983 [ERROR] Échec envoi mail d'erreur : [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-09-19 11:04:07,399 [INFO] Navigateur fermé
+2025-09-19 11:04:45,656 [INFO] Ouverture page de connexion
+2025-09-19 11:05:34,837 [ERROR] Erreur dans le script : Message: Aucun sélecteur valide trouvé parmi : [('css', "input[formcontrolname='login']"), ('css', "input[placeholder='Email']"), ('xpath', "//input[@type='text' or @type='email']")]
+
+2025-09-19 11:05:38,929 [ERROR] Échec envoi mail d'erreur : [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+2025-09-19 11:05:41,342 [INFO] Navigateur fermé
+2025-09-19 11:08:05,239 [INFO] Ouverture page de connexion
+2025-09-19 11:08:07,463 [INFO] Identifiant saisi
+2025-09-19 11:08:07,626 [INFO] Bouton 'Se connecter' cliqué
+2025-09-19 11:08:08,286 [INFO] Mot de passe saisi
+2025-09-19 11:08:08,296 [INFO] Connexion réussie
+2025-09-19 11:08:14,789 [INFO] Bouton 'Filtrer' cliqué
+2025-09-19 11:08:19,779 [INFO] Bouton 'Appliquer les filtres' cliqué
+2025-09-19 11:08:19,896 [INFO] Bouton 'Exporter' cliqué
+2025-09-19 11:08:20,899 [INFO] Fichier téléchargé et renommé : C:\Users\coule\Documents\projets\rtm_waryme\alertes\alertes_2025-09-08_2025-09-14_4.csv
+2025-09-19 11:08:23,408 [INFO] Navigateur fermé
+2025-09-19 11:15:52,921 [INFO] Ouverture page de connexion
+2025-09-19 11:15:54,421 [INFO] Identifiant saisi
+2025-09-19 11:15:54,605 [INFO] Bouton 'Se connecter' cliqué
+2025-09-19 11:15:55,292 [INFO] Mot de passe saisi
+2025-09-19 11:15:55,300 [INFO] Connexion réussie
+2025-09-19 11:15:58,246 [INFO] Bouton 'Filtrer' cliqué
+2025-09-19 11:16:03,018 [INFO] Bouton 'Appliquer les filtres' cliqué
+2025-09-19 11:16:03,114 [INFO] Bouton 'Exporter' cliqué
+2025-09-19 11:16:04,116 [INFO] Fichier téléchargé et renommé : C:\Users\coule\Documents\projets\rtm_waryme\alertes\alertes_2025-09-08_2025-09-14.csv
+2025-09-19 11:16:06,499 [INFO] Navigateur fermé
+2025-09-19 11:52:04,253 [INFO] Ouverture page de connexion
+2025-09-19 11:52:36,748 [INFO] Identifiant saisi
+2025-09-19 11:52:36,887 [INFO] Bouton 'Se connecter' cliqué
+2025-09-19 11:52:37,506 [INFO] Mot de passe saisi
+2025-09-19 11:52:37,512 [INFO] Connexion réussie
+2025-09-19 11:52:40,111 [INFO] Bouton 'Filtrer' cliqué
+2025-09-19 11:52:44,253 [INFO] Bouton 'Appliquer les filtres' cliqué
+2025-09-19 11:52:44,290 [INFO] Bouton 'Exporter' cliqué
+2025-09-19 11:52:47,293 [INFO] Fichier téléchargé et renommé : C:\Users\coule\Documents\projets\rtm_waryme\alertes\alertes_2025-09-08_2025-09-14_1.csv
+2025-09-19 11:52:49,591 [INFO] Navigateur fermé
