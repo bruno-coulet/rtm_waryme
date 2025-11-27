@@ -45,3 +45,21 @@
 2025-09-19 11:52:44,290 [INFO] Bouton 'Exporter' cliqu�
 2025-09-19 11:52:47,293 [INFO] Fichier t�l�charg� et renomm� : C:\Users\coule\Documents\projets\rtm_waryme\alertes\alertes_2025-09-08_2025-09-14_1.csv
 2025-09-19 11:52:49,591 [INFO] Navigateur ferm�
+2025-11-27 22:02:04,701 [INFO] Connexion en cours…
+2025-11-27 22:02:04,722 [ERROR] Erreur : Frame.goto() missing 1 required positional argument: 'url'
+2025-11-27 22:02:04,726 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused
+2025-11-27 22:07:25,191 [INFO] Connexion en cours…
+2025-11-27 22:07:26,096 [ERROR] Erreur : Frame.fill() missing 1 required positional argument: 'value'
+2025-11-27 22:07:26,099 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused
+2025-11-27 22:09:10,661 [INFO] Connexion en cours…
+2025-11-27 22:09:12,227 [ERROR] Erreur : Frame.fill() missing 1 required positional argument: 'value'
+2025-11-27 22:09:12,230 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused
+2025-11-27 22:09:36,666 [INFO] Connexion en cours…
+2025-11-27 22:09:37,369 [ERROR] Erreur : Frame.fill() missing 1 required positional argument: 'value'
+2025-11-27 22:09:37,371 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused
+2025-11-27 22:09:54,854 [INFO] Connexion en cours…
+2025-11-27 22:09:55,544 [ERROR] Erreur : Frame.fill() missing 1 required positional argument: 'value'
+2025-11-27 22:09:55,547 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused
+2025-11-27 22:27:22,240 [INFO] Connexion en cours…
+2025-11-27 22:27:23,048 [ERROR] Erreur : Frame.fill() missing 1 required positional argument: 'value'
+2025-11-27 22:27:23,050 [ERROR] Échec envoi mail d'erreur : [Errno 61] Connection refused

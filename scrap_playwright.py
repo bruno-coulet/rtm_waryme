@@ -16,7 +16,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
 # ========== Envoi mail en cas d'erreur ==========
 def send_error_mail(subject, body):
     recipients = ["bcoulet@rtm.fr", "bruno.coulet@laplatefrome.io"]
@@ -31,7 +30,6 @@ def send_error_mail(subject, body):
         logger.info("Mail d'erreur envoyé avec succès")
     except Exception as e:
         logger.error(f"Échec envoi mail d'erreur : {e}")
-
 
 # ========== Charger variables .env ==========
 load_dotenv()
@@ -49,6 +47,7 @@ today = date.today()
 start_date = today - timedelta(days=today.weekday() + 7)
 end_date = start_date + timedelta(days=6)
 
+# ================= Fonctions =================
 def login(page):
     logger.info("Connexion en cours…")
     page.goto(URL)
@@ -62,23 +61,23 @@ def login(page):
     page.wait_for_selector("button:has-text('Filtrer')", timeout=20000)
     logger.info("Connexion réussie")
 
-
 def go_to_alertes(page):
     logger.info("Navigation vers Alertes internes")
     page.click("text='Alertes internes'")
 
-
 def apply_filters(page):
     logger.info("Application des filtres dates")
-
     page.click("button:has-text('Filtrer')")
 
-    # remplissage direct des valeurs du champ input
+    # attendre que les inputs soient visibles
+    page.wait_for_selector("input[formcontrolname='startDate']", timeout=15000)
+    # Remplissage direct des champs date (valeurs obligatoires)
     page.fill("input[formcontrolname='startDate']", start_date.strftime("%Y-%m-%d"))
+
+    page.wait_for_selector("input[formcontrolname='endDate']", timeout=15000)
     page.fill("input[formcontrolname='endDate']", end_date.strftime("%Y-%m-%d"))
 
     page.click("button:has-text('Appliquer les filtres')")
-
 
 def export_csv(page):
     logger.info("Export CSV")
@@ -100,16 +99,14 @@ def export_csv(page):
         counter += 1
 
     download.save_as(target)
-
     logger.info(f"CSV téléchargé → {target}")
     print(f"📁 Export sauvegardé : {target}")
 
-
-# ========== Main ==========
+# ================= Main =================
 if __name__ == "__main__":
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
+            browser = p.chromium.launch(headless=False, slow_mo=50)
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
